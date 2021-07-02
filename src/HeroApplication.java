@@ -15,20 +15,20 @@ public class HeroApplication {
         String universe;
 
         // Variable assignment
-        heroName = "AliexpressMan";
-        heroCity = "Dobele";
-        heroPower1 = "Super discounts";
-        heroPower2 = "Fast delivery";
-        heroPower3 = "-";
+        heroName = "DogoMom";
+        heroCity = "Riga";
+        heroPower1 = "Lightning speed reaction";
+        heroPower2 = "Reads dog minds";
+        heroPower3 = " ";
         isEvil = false;
         heroSalary = 99.99;
-        realName = "Artjoms";
-        universe = "Ours";
+        realName = "Liza";
+        universe = "Our";
 
         // Print out Hero information card
-        System.out.println("************");
+        System.out.println("***********************");
         System.out.println("*** HERO INFO ***");
-        System.out.println("************");
+        System.out.println("***********************");
 
         System.out.println("Hero name: " + heroName);
         System.out.println("Hero lives in : " + heroCity);
@@ -42,11 +42,11 @@ public class HeroApplication {
         System.out.println("This super hero is evil? " + isEvil);
 
         System.out.println("This hero earns: " + heroSalary + " EUR ");
-        System.out.println(realName + " hides his identity.");
+        System.out.println(heroName + " hides her identity.");
         System.out.println("Hero lives in " + universe + " Universe ");
 
-        System.out.println("************");
+        System.out.println("***********************");
         System.out.println("*** HERO INFO ***");
-        System.out.println("************");
+        System.out.println("***********************");
     }
 }
