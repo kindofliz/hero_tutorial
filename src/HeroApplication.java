@@ -7,7 +7,7 @@ import java.util.Scanner;
 
 public class HeroApplication {
 
-    // Function to add x in arr
+    // Function to add a hero in the array
     public static String[] addX(String heroArray[], String newHeroName)
     {
         // create a new ArrayList
@@ -45,12 +45,19 @@ public class HeroApplication {
         //VARIABLES
         String[] heroList = {"DogoMom", "AliExpressMan", "Oh Lora", "Garbage man", "ProblemSolver", "Blossom", "Bubble", "FlowerGirl", "SuperSnowFlake", "MuffinGirl", "STAR"};
 
+        //Adding arrays for other variables to bring out specific hero info in menu item 3
+        String[] heroCityList = {"Riga", "Liepaja", "Talsi", "Rujiena", "Rezekne"};
+        double[] heroSalaryList = {3050.99, 2950.55, 1260.40, 4100.15, 3010.77};
+        String[] realNameList = {"Liza", "Laura", "Karina", "Tatjana", "Romans"};
+
+
+
         // MENU
-            // 1. I would like to see a MENU to select different parts of superhero information card
-            // 2. A list of superheroes
-            // 3. Add new superhero
-            // 4. show specific superhero information
-            // 5. Delete the superhero from the list
+            // -- I would like to see a MENU to select different parts of superhero information card
+            // 1. A list of superheroes
+            // 2. Add new superhero
+            // 3. show specific superhero information
+            // 4. Delete the superhero from the list
             // 0. Exit
 
 
@@ -88,10 +95,16 @@ public class HeroApplication {
                     System.out.println("Which superhero info to print? Enter an index from the list! ");
                     int superHeroIndex = scannerTwo.nextInt();
 
+                    System.out.println("================= SUPERHERO INFO ================");
                     System.out.println("Hero name: " + heroList[superHeroIndex]);
+                    System.out.println("Hero city: " + heroCityList[superHeroIndex]);
+                    System.out.println("Hero salary: " + heroSalaryList[superHeroIndex] + " EUR");
+                    System.out.println("Hero real name: " + realNameList[superHeroIndex]);
+                    System.out.println("================= SUPERHERO INFO ================");
+                    System.out.println();
 
-                    //add an array on top for salaries (double), powers, real name, etc, and every other variable we have!
-                    //and from that print the info here.. with loops
+                    //-----------------------------------------------------------------------------------------------//
+
 
                     // Variable initialization
                     String heroName;
@@ -101,12 +114,9 @@ public class HeroApplication {
                     String realName;
                     String universe;
 
-
                     // Variable assignment
                     heroName = "DogoMom";
                     heroCity = "Riga";
-
-
 
                     //ADDED AN ARRAY (21.07.21)
                     String[] powersArray = {"Lightning speed reaction", "Reads dog minds", "Master cuddler"};
@@ -120,7 +130,7 @@ public class HeroApplication {
                     // Print out Hero information card
                     System.out.println();
                     System.out.println("***********************************");
-                    System.out.println("************ HERO INFO ************");
+                    System.out.println("********* FULL HERO INFO **********");
                     System.out.println("***********************************");
 
                     System.out.println();
@@ -233,6 +243,9 @@ public class HeroApplication {
                             System.out.println("A grade you tried to input does not exist!");
 
                     }
+
+                    //-----------------------------------------------------------------------------------------------//
+
                     break;
                 case 4:
                     System.out.println("Please enter the name of hero you want to delete: ");
